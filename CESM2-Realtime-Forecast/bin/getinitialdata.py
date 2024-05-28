@@ -60,16 +60,6 @@ def get_data_from_campaignstore(date):
     else:
         return "---failed to find ocean and/or land IC files---"
 
-    print("Start renaming files...")
-    pattern = re.compile(r'.*0271-\d{2}-\d{2}-00000\.nc')
-    for filename in os.listdir(dest_path):
-        if pattern.match(filename):
-            # This is so we can rename the last climo ocean files (0271, aka 2020) with the date of the actual user-requested forecast run.
-            # Note: You can use any year of the climo oceand set, as nothing really changes except maybe some small background forcings.
-            # I chose 2020 because it is the closets to Kathy's forecast set of 2022. (sglanvil)
-            os.rename(os.path.join(dest_path,filename),os.path.join(dest_path,filename.replace("2020", str(date_obj.year))))
-    print("Done renaming files...")
-
     atmIn = os.path.join(atm_source_path,"CESM2_NCEP_0.9x1.25_L32.cam2.i.{}-00000.nc".format(date))
     atmOut = os.path.join(dest_path,"b.e21.f09_g17.cam.i.{}-00000.nc".format(date))
     if os.path.isfile(atmOut):
