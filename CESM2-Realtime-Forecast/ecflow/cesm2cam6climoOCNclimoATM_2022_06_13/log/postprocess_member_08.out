@@ -1,0 +1,250 @@
+invoking bashrc
+invoking bash_profile
+invoking bash_profile
++ set -o pipefail
++ export ECF_PORT=35254
++ ECF_PORT=35254
++ export ECF_HOST=derecho2
++ ECF_HOST=derecho2
++ export ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_06_13/postprocess_family/postprocess_member_08
++ ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_06_13/postprocess_family/postprocess_member_08
++ export ECF_PASS=o8SuCPV6
++ ECF_PASS=o8SuCPV6
++ export ECF_TRYNO=1
++ ECF_TRYNO=1
++ export ECF_RID=85972
++ ECF_RID=85972
++ export FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ export FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_06_13
++ FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_06_13
++ export CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ export CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ module load cesmdev/1.0 ncarenv/23.09 ecflow
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module use /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/modulefiles
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ ecflow_client --init=85972
++ trap ERROR 0
++ trap '{ echo "Killed by a signal"; ERROR ; }' 1 2 3 4 5 6 7 8 10 12 13 15
++ module load intel netcdf ncl nco cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
+++ echo postprocess_member_08
+++ cut -c 20-
++ member=08
++ cd /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_06_13/cesm2cam6climoOCNclimoATM_2022-06-13.08
++ ./case.st_archive
+st_archive starting
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/ocn.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/ocn.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/wav.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/wav.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/rof.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/rof.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/ice.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/ice.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cpl.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/cpl.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/atm.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/atm.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/cesm.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/glc.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/glc.log.4642018.desched1.240529-155722.gz
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/lnd.log.4642018.desched1.240529-155722.gz to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/logs/lnd.log.4642018.desched1.240529-155722.gz
+Cannot find a cesm2cam6climoOCNclimoATM_2022-06-13.08.cpl*.r.*.nc file in directory /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08 
+Archiving history files for cam (atm)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h4.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h4.2022-06-13-00000.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h2.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h2.2022-06-13-00000.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h1.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h1.2022-06-13-00000.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h3.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h3.2022-06-13-00000.nc 
+Archiving history files for clm (lnd)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.clm2.h0.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/lnd/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.clm2.h0.2022-06-13-00000.nc 
+Archiving history files for cice (ice)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-18.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-18.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-26.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-26.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-07.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-07.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-11.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-11.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-20.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-20.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-20.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-20.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-25.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-25.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-13.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-13.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-29.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-29.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-16.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-16.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-24.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-24.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-14.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-14.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-28.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-28.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-30.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-30.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-12.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-12.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-15.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-15.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-17.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-17.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-01.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-01.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-22.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-22.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-16.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-16.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-21.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-21.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-02.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-02.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-18.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-18.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-27.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-27.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-08.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-08.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-15.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-15.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-05.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-05.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-23.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-23.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-03.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-03.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-22.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-22.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-27.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-27.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-17.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-17.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-23.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-23.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-19.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-19.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-19.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-19.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-13.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-13.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-10.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-10.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-04.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-04.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-25.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-25.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-21.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-21.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-09.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-09.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-24.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-24.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-26.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-26.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-06.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-07-06.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-14.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cice.h.2022-06-14.nc 
+Archiving history files for pop (ocn)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.hv.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.hv.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.h.2022-06-13.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.h.2022-06-13.nc 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dd.2022-06-13-03600 to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dd.2022-06-13-03600 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dv.2022-06-13-03600 to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dv.2022-06-13-03600 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dt.2022-06-13-03600 to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.dt.2022-06-13-03600 
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.do.2022-06-13-03600 to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.do.2022-06-13-03600 
+Archiving history files for mosart (rof)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.mosart.h0.2022-06.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/rof/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.mosart.h0.2022-06.nc 
+Archiving history files for cism (glc)
+moving /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-06-13.00/run.08/cesm2cam6climoOCNclimoATM_2022-06-13.08.cism.initial_hist.2022-06-13-00000.nc to /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/glc/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cism.initial_hist.2022-06-13-00000.nc 
+Archiving history files for ww3 (wav)
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed
++ /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/bin/postprocess.py --member 08 --date 2022-06-13
+Running for members 8 to 8
+Running postprocessing for member 8 on date 2022-06-13
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ta_100/2022/06/ta_100_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ta_10/2022/06/ta_10_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ta_30/2022/06/ta_30_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ta_50/2022/06/ta_50_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ua_10/2022/06/ua_10_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/va_10/2022/06/va_10_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ua_30/2022/06/ua_30_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/va_30/2022/06/va_30_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/ua_50/2022/06/ua_50_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/va_50/2022/06/va_50_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/zg_10/2022/06/zg_10_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/zg_30/2022/06/zg_30_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/zg_50/2022/06/zg_50_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p3/zg_850/2022/06/zg_850_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/rlut/2022/06/rlut_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/pr_sfc/2022/06/pr_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/tas_2m/2022/06/tas_2m_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/ts/2022/06/ts_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/ua_200/2022/06/ua_200_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/ua_850/2022/06/ua_850_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/va_200/2022/06/va_200_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/va_850/2022/06/va_850_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/zg_200/2022/06/zg_200_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p1/zg_500/2022/06/zg_500_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/huss_850/2022/06/huss_850_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/tasmax_2m/2022/06/tasmax_2m_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/tasmin_2m/2022/06/tasmin_2m_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/hfss_sfc/2022/06/hfss_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/hfls_sfc/2022/06/hfls_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/stx_sfc/2022/06/stx_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/sty_sfc/2022/06/sty_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/rad_sfc/2022/06/rad_sfc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/sic/2022/06/sic_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/cape/2022/06/cape_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/wap_500/2022/06/wap_500_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/psl/2022/06/psl_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/ua_100/2022/06/ua_100_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/va_100/2022/06/va_100_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/uvas/2022/06/uvas_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/snc/2022/06/snc_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/mrro/2022/06/mrro_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/rzsm/2022/06/rzsm_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+(0)	Completed file: /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/p2/mrso/2022/06/mrso_cesm2cam6climoOCNclimoATM_13jun2022_00z_d01_d46_m08.nc
+ICE PATH
+/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/ice
+Combining cice files into cesm2cam6climoOCNclimoATM06.2022-06-13.08.cice.hd.nc in /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ice/hist
+RUN: ncrcat -4 -L 1 *.cice.h.*.nc -O /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/ice/cesm2cam6climoOCNclimoATM06.2022-06-13.08.cice.hd.nc
+  stat: 1
+
+  output: ERROR: nco__create() unable to create file "/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/ice/cesm2cam6climoOCNclimoATM06.2022-06-13.08.cice.hd.nc.pid99264.ncrcat.tmp"
+nco_err_exit(): ERROR NCO will now exit with system call exit(EXIT_FAILURE)
+
+  errput: nco_err_exit(): ERROR Short NCO-generated message (usually name of function that triggered error): nco__create()
+nco_err_exit(): ERROR Error code is 13. Translation into English with nc_strerror(13) is "Permission denied"
+
+Copying ocn daily files into cesm2cam6climoOCNclimoATM06.2022-06-13.08.pop.h.nday1.nc
+RUN: nccopy -4 -d 1 /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/ocn/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.h.2022-06-13.nc  /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/ocn/cesm2cam6climoOCNclimoATM_2022-06-13.08.pop.h.2022-06-13.nc
+  stat: 1
+
+  errput: Permission denied
+Location: file nccopy.c; fcn copy line 2104
+
+Copying /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h4.2022-06-13-00000.nc file into /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/3hourly
+RUN: nccopy -4 -d 1 -VTS,PS,PSL,QBOT,TMQ,UBOT,VBOT,lat,lon,date,time_bnds,time,gw,ndcur,nscur,nsteph /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h4.2022-06-13-00000.nc  /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/3hourly/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h4.2022-06-13-00000.nc
+  stat: 1
+
+  errput: Permission denied
+Location: file nccopy.c; fcn copy line 2104
+
+Copying /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h3.2022-06-13-00000.nc file into /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/6hourly
+RUN: nccopy -4 -d 1 -VU850,V850,TMQ,PRECT,uIVT,vIVT,IVT,PS,PSL,UBOT,VBOT,Z200,Z500,U10,lat,lon,date,time_bnds,time,gw,ndcur,nscur,nsteph /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h3.2022-06-13-00000.nc  /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/6hourly/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h3.2022-06-13-00000.nc
+  stat: 1
+
+  errput: Permission denied
+Location: file nccopy.c; fcn copy line 2104
+
+Copying /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h2.2022-06-13-00000.nc file into /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/daily
+RUN: nccopy -4 -d 1 -VFLNT,FSNT,FLDS,FSDS,PRECC,PRECL,QREFHT,RHREFHT,RH600,PSL,PS,SNOWHICE,SNOWHLND,CLDTOT,TMQ,SST,LANDFRAC,OCNFRAC,UVzm,VTHzm,UWzm,WTHzm,TROP_P,TROP_T,THzm,Uzm,Vzm,Wzm,PHIS,WSPDSRFMX,WSPDSRFAV,QFLX,U10,TGCLDIWP,TGCLDLWP,lev,ilev,lat,lon,date,time_bnds,time,gw,ndcur,nscur,nsteph /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/atm/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h2.2022-06-13-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/daily/cesm2cam6climoOCNclimoATM_2022-06-13.08.cam.h2.2022-06-13-00000.nc
+  stat: 1
+
+  errput: Permission denied
+Location: file nccopy.c; fcn copy line 2104
+
+LND OUTDIR:
+/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/lnd
+Copying /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/lnd/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.clm2.h0.2022-06-13-00000.nc file into /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/lnd
+RUN: nccopy -4 -d 1 /glade/derecho/scratch/ssfcst/archive/cesm2cam6climoOCNclimoATM_2022-06-13.08/lnd/hist/cesm2cam6climoOCNclimoATM_2022-06-13.08.clm2.h0.2022-06-13-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/lnd/cesm2cam6climoOCNclimoATM_2022-06-13.08.clm2.h0.2022-06-13-00000.nc
+  stat: 1
+
+  errput: Permission denied
+Location: file nccopy.c; fcn copy line 2104
+
++ wait
++ ecflow_client --complete
++ trap 0
++ exit 0

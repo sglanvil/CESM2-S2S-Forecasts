@@ -1,0 +1,198 @@
+invoking bashrc
+invoking bash_profile
+invoking bash_profile
++ set -o pipefail
++ export ECF_PORT=35254
++ ECF_PORT=35254
++ export ECF_HOST=derecho2
++ ECF_HOST=derecho2
++ export ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_05_30/run_family/run_member_10
++ ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_05_30/run_family/run_member_10
++ export ECF_PASS=eJOvkJ3P
++ ECF_PASS=eJOvkJ3P
++ export ECF_TRYNO=1
++ ECF_TRYNO=1
++ export ECF_RID=137060
++ ECF_RID=137060
++ export FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ export FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30
++ FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30
++ export CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ export CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ module load cesmdev/1.0 ncarenv/23.09 ecflow
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module use /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/modulefiles
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ ecflow_client --init=137060
++ trap ERROR 0
++ trap '{ echo "Killed by a signal"; ERROR ; }' 1 2 3 4 5 6 7 8 10 12 13 15
+++ echo run_member_10
+++ cut -c 12-
++ member=10
++ echo 2022-05-30 10
+2022-05-30 10
++ cd /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30/cesm2cam6climoOCNclimoATM_2022-05-30.10
++ ./case.submit --job case.run
+ - Prestaging REFCASE (/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30) to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.atm
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ice
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.drv
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.rof
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.ovf
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.restart
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.glc
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.lnd
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.clm2.rh1.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.mosart.rh0.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/g210.G_JRA.v14.gx1v7.01.dr.cice.r.0261-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.clm2.r.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.clm2.h1.2022-05-25-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.mosart.h0.2022-04.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.cism.r.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.clm2.rh0.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.mosart.h1.2022-05-26-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.cpl.r.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.mosart.r.2022-05-30-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.clm2.h0.2022-01-01-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/I2000Clm50BgcCrop.002runRealtime.mosart.rh1.2022-05-30-00000.nc
+Creating component namelists
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cam//cime_config/buildnml
+     ...calling cam buildcpp to set build time options
+CAM namelist copy: file1 /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30/cesm2cam6climoOCNclimoATM_2022-05-30.10/Buildconf/camconf/atm_in file2 /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10/atm_in 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/clm//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cice//cime_config/buildnml
+     ...buildnml calling cice buildcpp to set build time options
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop//cime_config/buildnml
+     ... buildnml: calling pop buildcpp to set build time options
+     given is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2666.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2667.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2668.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2675.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2676.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2677.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2678.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2679.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2680.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2681.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2682.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2683.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2684.
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/mosart//cime_config/buildnml
+   Running /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cism//cime_config/buildnml 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/ww3//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/drivers/mct/cime_config/buildnml
+Finished creating component namelists
+Checking that inputdata is available as part of case submission
+Loading input file list: 'Buildconf/clm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/pop.input_data_list'
+Loading input file list: 'Buildconf/ww3.input_data_list'
+Loading input file list: 'Buildconf/cice.input_data_list'
+Loading input file list: 'Buildconf/cism.input_data_list'
+Loading input file list: 'Buildconf/mosart.input_data_list'
+Loading input file list: 'Buildconf/cam.input_data_list'
+ - Prestaging REFCASE (/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30) to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.atm
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ice
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.drv
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.rof
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.ovf
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.restart
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.glc
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.lnd
+ - Prestaging REFCASE (/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30) to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.atm
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ice
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.drv
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.rof
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.ovf
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.restart
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.glc
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.lnd
+Creating component namelists
+Finished creating component namelists
+Check case OK
+submit_jobs case.run
+Submit job case.run
+Starting job script case.run
+Generating namelists for /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30/cesm2cam6climoOCNclimoATM_2022-05-30.10
+ - Prestaging REFCASE (/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30) to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.atm
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ice
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.drv
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.rof
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.ovf
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.ocn.restart
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.glc
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-30/rpointer.lnd
+Creating component namelists
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cam//cime_config/buildnml
+     ...calling cam buildcpp to set build time options
+CAM namelist copy: file1 /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_30/cesm2cam6climoOCNclimoATM_2022-05-30.10/Buildconf/camconf/atm_in file2 /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10/atm_in 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/clm//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cice//cime_config/buildnml
+     ...buildnml calling cice buildcpp to set build time options
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop//cime_config/buildnml
+     ... buildnml: calling pop buildcpp to set build time options
+     given is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2666.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2667.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2668.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2675.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2676.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2677.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2678.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2679.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2680.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2681.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2682.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2683.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/cime/../components/pop/bld/build-namelist line 2684.
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/mosart//cime_config/buildnml
+   Running /glade/u/home/ssfcst/cesm2.1.5/cime/../components/cism//cime_config/buildnml 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/../components/ww3//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/drivers/mct/cime_config/buildnml
+Finished creating component namelists
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/run.10
+ - Case input data directory (DIN_LOC_ROOT) is /glade/campaign/cesm/cesmdata/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+2024-05-29 16:23:29 MODEL EXECUTION BEGINS HERE
+run command is mpiexec  --label  --line-buffer  -n 1280 /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-30.00/bld/cesm.exe  >> cesm.log.$LID 2>&1  
+2024-05-29 16:42:25 MODEL EXECUTION HAS FINISHED
+Submitted job case.run with id None
++ wait
++ ecflow_client --complete
++ trap 0
++ exit 0

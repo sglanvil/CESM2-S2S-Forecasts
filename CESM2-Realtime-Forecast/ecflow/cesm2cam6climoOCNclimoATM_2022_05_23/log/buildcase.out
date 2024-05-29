@@ -1,0 +1,385 @@
+invoking bashrc
+invoking bash_profile
+invoking bash_profile
++ set -o pipefail
++ export ECF_PORT=35254
++ ECF_PORT=35254
++ export ECF_HOST=derecho2
++ ECF_HOST=derecho2
++ export ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_05_23/buildcase
++ ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_05_23/buildcase
++ export ECF_PASS=Xdjz669g
++ ECF_PASS=Xdjz669g
++ export ECF_TRYNO=1
++ ECF_TRYNO=1
++ export ECF_RID=152686
++ ECF_RID=152686
++ export FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ export FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23
++ FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23
++ export CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ export CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ module load cesmdev/1.0 ncarenv/23.09 ecflow
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module use /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/modulefiles
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ ecflow_client --init=152686
++ trap ERROR 0
++ trap '{ echo "Killed by a signal"; ERROR ; }' 1 2 3 4 5 6 7 8 10 12 13 15
++ cd /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/bin/
++ module load cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ ./buildcase.py --date 2022-05-23 --ensemble-start 0 --ensemble-end 10
+sys path is ['/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/bin', '/glade/u/apps/derecho/23.09/spack/opt/spack/ecflow/5.8.3/gcc/7.5.0/n3xt/lib/python3.10/site-packages', '/glade/u/apps/cseg/derecho/python/lib64/python3.10/site-packages', '/glade/u/apps/derecho/23.09/opt/._view/odrwlzmytkrjxo23ksqox35tlpn7k4z5/lib/python310.zip', '/glade/u/apps/derecho/23.09/opt/._view/odrwlzmytkrjxo23ksqox35tlpn7k4z5/lib/python3.10', '/glade/u/apps/derecho/23.09/opt/._view/odrwlzmytkrjxo23ksqox35tlpn7k4z5/lib/python3.10/lib-dynload', '/glade/u/apps/derecho/23.09/opt/._view/odrwlzmytkrjxo23ksqox35tlpn7k4z5/lib/python3.10/site-packages', '/glade/u/home/ssfcst/cesm2.1.5/cime/scripts/Tools', '/glade/u/home/ssfcst/cesm2.1.5/cime/scripts/lib']
+Compset longname is SSP585_CAM60_CLM50%BGC-CROP_CICE_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD
+Compset specification file is /glade/u/home/ssfcst/cesm2.1.5/cime/../cime_config/config_compsets.xml
+Compset forcing is CMIP6 SSP5-8.5 forcing
+Com forcing is Biogeochemistry intercomponent  with diagnostic CO2
+ATM component is CAM cam6 physics:
+LND component is clm5.0:BGC (vert. resol. CN and methane) with prognostic crop:
+ICE component is Sea ICE (cice) model version 5
+OCN component is POP2 EcosystemAbiotic DIC/DIC14
+ROF component is MOSART: MOdel for Scale Adaptive River Transport
+GLC component is cism2 (default, higher-order, can run in parallel):cism ice evolution turned off (this is the standard configuration unless you're explicitly interested in ice evolution):
+WAV component is Wave Watch
+ESP component is 
+Pes     specification file is /glade/u/home/ssfcst/cesm2.1.5/cime/../cime_config/config_pes.xml
+Compset specific settings: name is RUN_STARTDATE and value is 2015-01-01
+Compset specific settings: name is RUN_REFDATE and value is 2015-01-01
+Compset specific settings: name is RUN_TYPE and value is hybrid
+Compset specific settings: name is RUN_REFCASE and value is b.e21.BHIST.f09_g17.CMIP6-historical.010_v2
+Compset specific settings: name is RUN_REFDIR and value is cesm2_init
+Compset specific settings: name is CLM_NAMELIST_OPTS and value is use_init_interp=.true.  init_interp_method='use_finidat_areas'
+Machine is derecho
+Pes setting: grid match    is a%0.9x1.25.+l%0.9x1.25.+oi%gx1 
+Pes setting: machine match is derecho 
+Pes setting: grid          is a%0.9x1.25_l%0.9x1.25_oi%gx1v7_r%r05_g%gland4_w%ww3a_m%gx1v7 
+Pes setting: compset       is SSP585_CAM60_CLM50%BGC-CROP_CICE_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD 
+Pes setting: tasks       is {'NTASKS_ATM': 1024, 'NTASKS_LND': 768, 'NTASKS_ROF': 64, 'NTASKS_ICE': 192, 'NTASKS_OCN': 256, 'NTASKS_GLC': 64, 'NTASKS_WAV': 64, 'NTASKS_CPL': 1024} 
+Pes setting: threads     is {} 
+Pes setting: rootpe      is {'ROOTPE_ATM': 0, 'ROOTPE_LND': 256, 'ROOTPE_ROF': 0, 'ROOTPE_ICE': 64, 'ROOTPE_OCN': 1024, 'ROOTPE_GLC': 0, 'ROOTPE_WAV': 0, 'ROOTPE_CPL': 0} 
+Pes setting: pstrid      is {} 
+Pes other settings: {}
+Pes comments: 14ypd 
+ Compset is: SSP585_CAM60_CLM50%BGC-CROP_CICE_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD 
+ Grid is: a%0.9x1.25_l%0.9x1.25_oi%gx1v7_r%r05_g%gland4_w%ww3a_m%gx1v7 
+ Components in compset are: ['cam', 'clm', 'cice', 'pop', 'mosart', 'cism', 'ww3', 'sesp', 'drv', 'dart'] 
+Using project from env PROJECT: CESM0021
+No charge_account info available, using value from PROJECT
+Using project from env PROJECT: CESM0021
+cesm model version found: ssfcst_020924
+Batch_system_type is pbs
+job is case.run USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+job is case.st_archive USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+ Creating Case directory /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6.base
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+WARNING: Overwriting existing SourceMods in /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/README
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/gx1v7_tavg_contents
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/submeso_terms_tavg_contents
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/ocn.iage.tavg.csh
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/gx1v7_tavg_contents~
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.pop/ocn.vmix.tavg.csh
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.cam/dyn_comp.F90
+Adding SourceMod to case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/SourceMods/src.cam/cam_diagnostics.F90
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/shell_commands
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Building case in directory /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00
+sharedlib_only is False
+model_only is False
+Generating component namelists as part of build
+ - Prestaging REFCASE (/glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23) to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/run.00
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.atm
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.ice
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.drv
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.rof
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.ocn.ovf
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.ocn.restart
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.glc
+Copy rpointer /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/rpointer.lnd
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.clm2.h1.2022-04-25-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.mosart.h0.2022-04.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.mosart.rh0.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/g210.G_JRA.v14.gx1v7.01.dr.cice.r.0261-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.mosart.r.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.cpl.r.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.clm2.rh1.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.clm2.rh0.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.mosart.rh1.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.mosart.h1.2022-04-26-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.cism.r.2022-05-23-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.clm2.h0.2022-01-01-00000.nc
+Staging file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-05-23/I2000Clm50BgcCrop.002runRealtime.clm2.r.2022-05-23-00000.nc
+Creating component namelists
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/cam//cime_config/buildnml
+     ...calling cam buildcpp to set build time options
+CAM namelist copy: file1 /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00/Buildconf/camconf/atm_in file2 /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/run.00/atm_in 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/clm//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/cice//cime_config/buildnml
+     ...buildnml calling cice buildcpp to set build time options
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/pop//cime_config/buildnml
+     ... buildnml: calling pop buildcpp to set build time options
+     given is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2666.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2667.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2668.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2675.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2676.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2677.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2678.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2679.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2680.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2681.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2682.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2683.
+when is deprecated at /glade/u/home/ssfcst/cesm2.1.5/components/pop/bld/build-namelist line 2684.
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/mosart//cime_config/buildnml
+   Running /glade/u/home/ssfcst/cesm2.1.5/components/cism//cime_config/buildnml 
+   Calling /glade/u/home/ssfcst/cesm2.1.5/components/ww3//cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/drivers/mct/cime_config/buildnml
+Finished creating component namelists
+Building gptl with output to file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/gptl.bldlog.240529-151607
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/build_scripts/buildlib.gptl
+Building mct with output to file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/mct.bldlog.240529-151607
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/build_scripts/buildlib.mct
+Building pio with output to file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/pio.bldlog.240529-151607
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/build_scripts/buildlib.pio
+Component pio build complete with 2 warnings
+Building csm_share with output to file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/csm_share.bldlog.240529-151607
+   Calling /glade/u/home/ssfcst/cesm2.1.5/cime/src/build_scripts/buildlib.csm_share
+Component csm_share build complete with 15 warnings
+         - Building clm4_5/clm5_0 Library 
+Building lnd with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/lnd.bldlog.240529-151607
+Component lnd build complete with 9 warnings
+clm built in 109.292170 seconds
+Building atm with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/atm.bldlog.240529-151607
+Building ice with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/ice.bldlog.240529-151607
+Building ocn with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/ocn.bldlog.240529-151607
+Building rof with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/rof.bldlog.240529-151607
+Building glc with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/glc.bldlog.240529-151607
+Building wav with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/wav.bldlog.240529-151607
+Building esp with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/esp.bldlog.240529-151607
+sesp built in 3.527962 seconds
+mosart built in 19.637048 seconds
+ww built in 23.916821 seconds
+Component ocn build complete with 26 warnings
+pop built in 67.328862 seconds
+Component ice build complete with 1 warnings
+cice built in 77.011023 seconds
+Component atm build complete with 14 warnings
+cam built in 85.501860 seconds
+Component glc build complete with 2 warnings
+cism built in 112.677416 seconds
+Building cesm with output to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-05-23.00/bld/cesm.bldlog.240529-151607 
+Time spent not building: 5.501283 sec
+Time spent building: 330.798768 sec
+MODEL BUILD HAS FINISHED SUCCESSFULLY
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.01
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.01/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.01 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.01/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.02
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.02/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.02 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.02/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.03
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.03/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.03 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.03/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.04
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.04/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.04 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.04/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.05
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.05/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.05 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.05/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.06
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.06/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.06 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.06/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.07
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.07/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.07 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.07/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.08
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.08/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.08 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.08/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.09
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.09/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.09 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.09/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Cloning case /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.00 to /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.10
+Adding user mods directory /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/user_mods/cesm2cam6
+RUN: /glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.10/shell_commands
+ Successfully created new case cesm2cam6climoOCNclimoATM_2022-05-23.10 from clone case cesm2cam6climoOCNclimoATM_2022-05-23.00 
+/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_05_23/cesm2cam6climoOCNclimoATM_2022-05-23.10/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 04:00:00 USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/u/home/ssfcst/cesm2.1.5/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
++ wait
++ ecflow_client --complete
++ trap 0
++ exit 0

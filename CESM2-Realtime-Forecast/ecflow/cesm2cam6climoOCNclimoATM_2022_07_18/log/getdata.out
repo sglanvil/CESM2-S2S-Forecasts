@@ -1,0 +1,93 @@
+invoking bashrc
+invoking bash_profile
+invoking bash_profile
++ set -o pipefail
++ export ECF_PORT=35254
++ ECF_PORT=35254
++ export ECF_HOST=derecho2
++ ECF_HOST=derecho2
++ export ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_07_18/getdata
++ ECF_NAME=/cesm2cam6climoOCNclimoATM_2022_07_18/getdata
++ export ECF_PASS=pSbXgdQG
++ ECF_PASS=pSbXgdQG
++ export ECF_TRYNO=1
++ ECF_TRYNO=1
++ export ECF_RID=200414
++ ECF_RID=200414
++ export FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ FCST_HOME=/glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast
++ export FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_07_18
++ FCST_WORK=/glade/work/ssfcst/derecho/cases/cesm2cam6climoOCNclimoATM_2022_07_18
++ export CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ CESM_ROOT=/glade/u/home/ssfcst/cesm2.1.5
++ export CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ CESM_WORKFLOW=cesm2cam6climoOCNclimoATM
++ module load cesmdev/1.0 ncarenv/23.09 ecflow
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module use /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/modulefiles
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cesm2cam6climoOCNclimoATM
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ ecflow_client --init=200414
++ trap ERROR 0
++ trap '{ echo "Killed by a signal"; ERROR ; }' 1 2 3 4 5 6 7 8 10 12 13 15
++ module load intel udunits ncl nco
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ cd /glade/u/home/ssfcst/cesm2cam6climoOCNclimoATM/CESM2-Realtime-Forecast/bin/
++ ./getinitialdata.py --date 2022-07-18
+ocean date is... 0273-07-18
++ ./generate_cami_ensemble.py --date 2022-07-18 --ensemble-start 0 --ensemble-end 10
+baserundir is /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.00
+Rvals are [648, 225, 483, 137, 426, 52]
+Linking /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc to /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.00/b.e21.f09_g17.cam.i.2022-07-18-00000.nc
+Creating perturbed init file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.01/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+Creating perturbed init file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.03/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+Creating perturbed init file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.05/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+Creating perturbed init file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.07/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+Creating perturbed init file /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.09/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w 0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.648.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.03/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w 0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.137.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.09/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w 0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.426.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.01/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w -0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.648.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.04/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w -0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.225.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.06/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w 0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.483.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.07/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w -0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.426.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.02/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w -0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.137.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.10/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w -0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.483.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.08/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
+RUN: ncflint -O -C -v lat,lon,slat,slon,lev,ilev,hyai,hybi,hyam,hybm,US,VS,T,Q,PS -w 0.15,1.0 /glade/campaign/cesm/development/cross-wg/S2S/CESM2/CAMI/RP/07/CESM2.cam.i.M07.diff.225.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM/StageIC/rest/2022-07-18/b.e21.f09_g17.cam.i.2022-07-18-00000.nc /glade/derecho/scratch/ssfcst/cesm2cam6climoOCNclimoATM_2022-07-18.00/run.05/b.e21.f09_g17.cam.i.2022-07-18-tmp.nc
++ wait
++ ecflow_client --complete
++ trap 0
++ exit 0
