@@ -9,7 +9,7 @@
 * cesm2cam6_land0.5
 * cesm2cam6climoATM
 * cesm2cam6climoLND
-* cesm2cam6climoOCN ..........(real ATM & LND)
-* cesm2cam6climoOCNclimoLND  (real ATM)
-* cesm2cam6climoOCNclimoATM  (real LND)
-* cesm2cam6climoATMclimoLND  (real OCN)
+* cesm2cam6climoOCN ................(real ATM & LND)
+* cesm2cam6climoOCNclimoLND  ..(real ATM)
+* cesm2cam6climoOCNclimoATM  ..(real LND)
+* cesm2cam6climoATMclimoLND  ..(real OCN)
