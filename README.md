@@ -11,3 +11,4 @@
 * cesm2cam6climoLND
 * cesm2cam6climoOCN
 * cesm2cam6climoOCNclimoLND
+* cesm2cam6climoOCNclimoATM
