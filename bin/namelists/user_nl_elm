@@ -1,0 +1,18 @@
+! Pointing to new simyr2015 file per Jim Benedict
+ fsurdat = '/global/cfs/cdirs/e3sm/inputdata/lnd/clm2/surfdata_map/surfdata_ne30np4.pg2_SSP3_RCP70_simyr2015_c220420.nc'
+
+ hist_empty_htapes  = .true.
+! hist_fincl1 = 'TLAI', 'AR', 'ER', 'NBP', 'QVEGT', 'CPHASE', 'TWS', 'QRUNOFF', 'H2OSOI','FSNO','H2OSNO','H2OCAN','SOILICE','QOVER','SOILWATER_10CM','SNOWDP','SOILLIQ','RAIN','SNOW','QSOIL','QVEGE','QVEGT','QRGWL','QOVER','QDRAI','HR','NEE','FIRE','FAREA_BURNED','BTRAN2','FUELC','TOTECOSYSC','TOTVEGC','CWDC','COL_FIRE_CLOSS'
+
+ hist_dov2xy = .true.
+ hist_fincl1 = 'TLAI', 'H2OSNO', 'H2OSOI', 'SOILWATER_10CM', 'RAIN', 'QVEGE', 'QVEGT', 'QSOIL', 'FSNO', 'QRUNOFF', 'QSNOMELT', 'FSNO_EFF', 'SNORDSL', 'SNOW', 'FSDS', 'FSR', 'FLDS', 'FIRE', 'FIRA'
+ hist_mfilt = 46
+ hist_nhtfrq = -24
+ hist_avgflag_pertape = 'A'
+
+! Override - updated after EAM/ELM fixes
+ check_finidat_fsurdat_consistency = .false.
+ check_finidat_pct_consistency = .true.
+ check_finidat_year_consistency = .true.
+
+

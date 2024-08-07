@@ -1,0 +1,26 @@
+!! h0, h1, h2, h3, h4, h5,h6
+  avgflag_pertape = 'A','A','A','I','I','I'
+  nhtfrq = 0, -24, -24, -6, -3, -24 
+  mfilt  = 1, 46, 46, 181, 361, 46
+
+  do_circulation_diags  = .true.
+  empty_htapes = .true.
+  fincl1 = ' '
+  fincl2 = 'U','V','T','OMEGA','Z3','PS','PHIS','Q','UQ','VQ','RELHUM',
+  fincl3 = 'PHIS','PRECT','TS','FLUT','TREFHT','Q850','TREFHTMX:X','TREFHTMN:M','SHFLX','LHFLX','TAUX','TAUY','FSNS','ICEFRAC','CAPE','T100','T010','T030','T050','FLNT','FLNS','FSNT','FSNS','FLDS','FSDS','PRECC','PRECL','QREFHT','RHREFHT','RH600','PSL','PS','SNOWHICE','SNOWHLND','CLDTOT','TMQ','SST','LANDFRAC','OCNFRAC','TROP_P','TROP_T','Z500','WSPDSRFMX:X', 'WSPDSRFAV', 'QFLX','U10','TGCLDIWP','TGCLDLWP'
+  fincl4 = 'Z200','Z500','U850','U200','V850','V200','OMEGA500','PSL','PS','U100','V100','U10','UBOT','VBOT','Z850','U010','V010','U030','V030','U050','V050','Z010','Z030','Z050','TMQ','PRECT:A'
+  fincl5 = 'TS','PS','PSL','QBOT','TMQ','UBOT','VBOT'
+  fincl6 = ' '
+  fincl7 = ' '
+  fincl8 = ' '
+
+ ext_frc_specifier              = 'SO2         -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_so2_elev_1850-2100_c221016.nc',
+         'SOAG        -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_soag_elev_1850-2100_c221016.nc',
+         'bc_a4       -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_bc_a4_elev_1850-2100_c221016.nc',
+         'num_a1      -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_num_a1_elev_1850-2100_c221016.nc',
+         'num_a2      -> /global/cfs/cdirs/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/DECK_ne30/cmip6_mam4_num_a2_elev_1850-2014_c180205.nc',
+         'num_a4      -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_num_a4_elev_1850-2100_c221016.nc',
+         'pom_a4      -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_pom_a4_elev_1850-2100_c221016.nc',
+         'so4_a1      -> /global/cfs/cdirs/ccsm1/people/nanr/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/CMIP6_SSP370_ne30-smoothed/cmip6_ssp370_mam4_smoothed_so4_a1_elev_1850-2100_c221016.nc',
+         'so4_a2      -> /global/cfs/cdirs/e3sm/inputdata/atm/cam/chem/trop_mozart_aero/emis/DECK_ne30/cmip6_mam4_so4_a2_elev_1850-2014_c180205.nc'
+ ext_frc_type           = 'INTERP_MISSING_MONTHS'
