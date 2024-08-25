@@ -160,7 +160,8 @@ for ((i=1; i<=ensembleSize; i++)); do
 	script_provenance_name=${this_script_name}.`date +%Y%m%d-%H%M%S`
 	cp -p ${this_full_path} ${script_provenance_dir}/${script_provenance_name}
 	source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
-	ls ${CASE_RUN_DIR}/${RUN_REFCASE}*.nc | xargs -I {} ncdump -h {} | grep -e "original_file" -e "netcdf" > ${script_provenance_dir}/${script_provenance_name}
+	echo "...original names for IC files..." >> ${script_provenance_dir}/${script_provenance_name}
+	ls ${CASE_RUN_DIR}/${RUN_REFCASE}*.nc | xargs -I {} ncdump -h {} | grep -e "original_file" -e "netcdf" >> ${script_provenance_dir}/${script_provenance_name}
 	conda deactivate
 
 	# ---------------------------- SUBMIT RUN ----------------------------
