@@ -1,14 +1,8 @@
 #!/bin/bash
 # sglanvil | July 23, 2024
 
-# 2000-01-03 OLD1 had NO eam.i file in mem001 (fails -- correctly done)
-# 2000-01-03 ALL GOOD
-# 2000-01-10 test with NO land restarts (all failed -- correctly done)
-# 2000-01-17 test with NO ocean restarts (all failed -- correctly done)
-# 2000-01-24 ALL GOOD with added H2OSOI
-# 2000-01-31 ALL GOOD with added SOILWATER_10CM, RAIN, QVEGE, QVEGT, QSOIL
 # ----------------------- USER SPECIFIES --------------------------
-DATE=2000-01-31
+DATE=$1 # format: 2000-02-07
 ensembleSize=11 
 # -----------------------------------------------------------------
 
@@ -48,7 +42,7 @@ for ((i=0; i<$(( ensembleSize/2 )); i++)); do
         numbers+=("$formatted_num")
         seen+=("$formatted_num")
 done
-echo "${numbers[@]}" > eamic_${DATE}.1-10.txt
+echo "${numbers[@]}" > /global/cfs/cdirs/mp9/E3SMv2.1-S2S/eamic_txt_files/eamic_${DATE}.1-10.txt
 # ----------------------------------------------------------------------------------
 
 for ((i=1; i<=ensembleSize; i++)); do
@@ -80,13 +74,16 @@ for ((i=1; i<=ensembleSize; i++)); do
 	cp -r ${SOURCEMODS_DIR}/* ${CASE_SCRIPTS_DIR}/SourceMods/
 
 	# ---------------------------- PRESTAGE IC FILES ----------------------------
-	ATM_IC_DIR='/pscratch/sd/n/nanr/ERA5_init/CATALYST_init/'
+	ATM_IC_DIR='/global/cfs/cdirs/mp9/E3SMv2.1-S2S/eami.HICCUP-ERA5-CATALYST.ne30np4.L72_MONDAYS/'
 	original_file=${ATM_IC_DIR}/eami.HICCUP-ERA5-CATALYST.${DATE}.ne30np4.L72.c20240803.nc
 	if [[ "$mbr" == "001" ]]; then
                 # use original file
                 echo "mbr: 001, use original file"
                 echo ${original_file}
 		cp ${original_file} ${CASE_RUN_DIR}/${RUN_REFCASE}.eam.i.${DATE}-00000.nc
+		source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
+		ncatted -O -h -a original_file,global,o,c,eami.HICCUP-ERA5-CATALYST.${DATE}.ne30np4.L72.c20240803.nc ${CASE_RUN_DIR}/${RUN_REFCASE}.eam.i.${DATE}-00000.nc
+		conda deactivate
 	else 
 		mbr_num=$((10#$mbr))  # Convert to number to handle leading zeros
 		if (( mbr_num % 2 == 0 )); then
@@ -105,12 +102,17 @@ for ((i=1; i<=ensembleSize; i++)); do
 		source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
 		ncflint -O -C -v time_bnds,lev,ilev,hyai,hybi,hyam,hybm,U,V,T,Q,PS -w ${weight},1.0 ${pert_file} ${original_file} ${final_file}
 		ncrename -d ncol_d,ncol ${final_file}
+		ncatted -O -h -a original_file,global,o,c,eami.HICCUP-ERA5-CATALYST.${DATE}.ne30np4.L72.c20240803.nc ${final_file}
 		conda deactivate
 	fi
 
-	LAND_IC_DIR='/global/cfs/cdirs/mp9/E3SMv2.1-S2S/v21.LR.I20TRELM_CRUNCEP-daily_MONDAYS'
+	LAND_IC_DIR='/global/cfs/cdirs/mp9/E3SMv2.1-S2S/v21.LR.I20TRELM_CRUNCEP-daily_MONDAYS/'
 	cp ${LAND_IC_DIR}/v21.LR.I20TRELM_CRUNCEP-daily.elm.r.${DATE}-00000.nc ${CASE_RUN_DIR}/${RUN_REFCASE}.elm.r.${DATE}-00000.nc
 	cp ${LAND_IC_DIR}/v21.LR.I20TRELM_CRUNCEP-daily.mosart.r.${DATE}-00000.nc  ${CASE_RUN_DIR}/${RUN_REFCASE}.mosart.r.${DATE}-00000.nc
+        source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
+	ncatted -O -h -a original_file,global,o,c,v21.LR.I20TRELM_CRUNCEP-daily.elm.r.${DATE}-00000.nc ${CASE_RUN_DIR}/${RUN_REFCASE}.elm.r.${DATE}-00000.nc
+	ncatted -O -h -a original_file,global,o,c,v21.LR.I20TRELM_CRUNCEP-daily.mosart.r.${DATE}-00000.nc  ${CASE_RUN_DIR}/${RUN_REFCASE}.mosart.r.${DATE}-00000.nc
+	conda deactivate
 
 	OCEAN_IC_DIR='/global/cfs/cdirs/mp9/E3SMv2.1-S2S/cycle6_daily-restarts_MONDAYS/'
 	oyear=$(printf "%04d" $(( YEAR - 1957 )))
@@ -119,6 +121,8 @@ for ((i=1; i<=ensembleSize; i++)); do
 	source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
 	ncrename -v xtime,xtime.orig ${CASE_RUN_DIR}/${RUN_REFCASE}.mpaso.rst.${DATE}_00000.nc
 	ncrename -v xtime,xtime.orig ${CASE_RUN_DIR}/${RUN_REFCASE}.mpassi.rst.${DATE}_00000.nc
+	ncatted -O -h -a original_file,global,o,c,20240603_EC30to60_cycle6_daily_restarts_anvil.mpaso.rst.${oyear}-${MONTH}-${DAY}_00000.nc ${CASE_RUN_DIR}/${RUN_REFCASE}.mpaso.rst.${DATE}_00000.nc
+	ncatted -O -h -a original_file,global,o,c,20240603_EC30to60_cycle6_daily_restarts_anvil.mpassi.rst.${oyear}-${MONTH}-${DAY}_00000.nc ${CASE_RUN_DIR}/${RUN_REFCASE}.mpassi.rst.${DATE}_00000.nc
 	conda deactivate	
 
 	# ---------------------------- BUILD CASE ----------------------------
@@ -146,6 +150,7 @@ for ((i=1; i<=ensembleSize; i++)); do
 	./xmlchange RUN_REFCASE=${RUN_REFCASE}
 	./xmlchange RUN_REFDATE=${DATE}
 	./xmlchange DOUT_S=TRUE
+	./xmlchange REST_OPTION=never
 	./xmlchange JOB_WALLCLOCK_TIME=01:00:00 --subgroup case.run
 
 	# ---------------------------- COPY PROVENANCE SCRIPT ---------------------------- 
@@ -154,6 +159,9 @@ for ((i=1; i<=ensembleSize; i++)); do
 	this_script_name=$(basename "$this_full_path")
 	script_provenance_name=${this_script_name}.`date +%Y%m%d-%H%M%S`
 	cp -p ${this_full_path} ${script_provenance_dir}/${script_provenance_name}
+	source /global/common/software/e3sm/anaconda_envs/load_latest_e3sm_unified_pm-cpu.sh
+	ls ${CASE_RUN_DIR}/${RUN_REFCASE}*.nc | xargs -I {} ncdump -h {} | grep -e "original_file" -e "netcdf" > ${script_provenance_dir}/${script_provenance_name}
+	conda deactivate
 
 	# ---------------------------- SUBMIT RUN ----------------------------
 	./case.submit
