@@ -1,7 +1,6 @@
 #!/bin/bash
 
-inputYear=2000
-
+inputYear=2013
 start_date=$(date -I -d "${inputYear}-01-01")
 end_date=$(date -I -d "$(( inputYear + 1 ))-01-01")
 while [ $(date -d "$start_date" +%u) -ne 1 ]; do
@@ -13,11 +12,10 @@ done
 echo ${start_date} ${end_date}
 echo
 
-#d=${start_date} # specify monday start date (the INCLUDED monday)
-#while [ "$d" != ${end_date} ]; do # specify monday end date (the EXCLUDED monday)
-
-d=2000-05-01 # specify monday start date (the INCLUDED monday)
-while [ "$d" != 2000-06-05 ]; do # specify monday end date (the EXCLUDED monday)
+d=${start_date} # specify monday start date (the INCLUDED monday)
+while [ "$d" != ${end_date} ]; do # specify monday end date (the EXCLUDED monday)
+#d=2004-05-03 # specify monday start date (the INCLUDED monday)
+#while [ "$d" != 2005-01-03 ]; do # specify monday end date (the EXCLUDED monday)
         year=$(date -d "$d" +%Y)
         month=$(date -d "$d" +%m)
         day=$(date -d "$d" +%d)

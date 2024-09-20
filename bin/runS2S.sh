@@ -70,7 +70,8 @@ for ((i=1; i<=ensembleSize; i++)); do
 	./xmlchange DOUT_S_ROOT=${CASE_ARCHIVE_DIR}
 	cp ${NAMELISTS_DIR}/user_nl* .
 	./case.setup --reset
-	cp /global/u2/n/nanr/CESM_tools/e3sm/v2/scripts/v2.SMYLE/env_mach/env_mach_specific.xml ${CASE_SCRIPTS_DIR}/
+	# cp /global/u2/n/nanr/CESM_tools/e3sm/v2/scripts/v2.SMYLE/env_mach/env_mach_specific.xml ${CASE_SCRIPTS_DIR}/
+	cp /global/homes/s/sglanvil/S2S/E3SM_S2S_Forecasts/E3SM-Realtime-Forecast/bin/env_mach_specific.xml ${CASE_SCRIPTS_DIR}/
 	cp -r ${SOURCEMODS_DIR}/* ${CASE_SCRIPTS_DIR}/SourceMods/
 
 	# ---------------------------- PRESTAGE IC FILES ----------------------------
@@ -163,6 +164,13 @@ for ((i=1; i<=ensembleSize; i++)); do
 	echo "...original names for IC files..." >> ${script_provenance_dir}/${script_provenance_name}
 	ls ${CASE_RUN_DIR}/${RUN_REFCASE}*.nc | xargs -I {} ncdump -h {} | grep -e "original_file" -e "netcdf" >> ${script_provenance_dir}/${script_provenance_name}
 	conda deactivate
+
+	# ---------------------------- EDITS FOR NODE RESERVAION ---------------------------- 
+	#sed -i '/#SBATCH  --constraint=cpu/a #SBATCH  --reservation=e3sm_s2s_one_year' .case.run.sh
+	#sed -i '/#SBATCH  --constraint=cpu/a #SBATCH  --reservation=e3sm_s2s_one_year' .case.run
+	#sed -i '/#SBATCH  --constraint=cpu/a #SBATCH  --reservation=e3sm_s2s_one_year' case.st_archive
+	#sed -i '/      <directive> --constraint=cpu<\/directive>/a\      <directive> --reservation=e3sm_s2s_one_year<\/directive>' env_batch.xml
+	#sleep 1s
 
 	# ---------------------------- SUBMIT RUN ----------------------------
 	./case.submit
